@@ -35,7 +35,7 @@
     "billsRate" : 999,
     "bank" : "AMEX",
     "groceryRate" : 6,
-    "overseasRate" : 1.68,
+    "overseasRate" : 2.68,
     "flightHotelRate" : 1.68,
     "transportRate" : 6,
     "imageName" : "amex_explorer",
