@@ -1,55 +1,93 @@
 [
   {
-    "baseRate" : 6,
-    "diningRate" : 6,
-    "name" : "Explorer",
-    "onlineLocalRate" : 6,
-    "id" : "amex_explorer",
-    "adviceMessages" : [
+    "id": "amex_explorer",
+    "name": "Explorer",
+    "bank": "AMEX",
+    "imageName": "amex_explorer",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 6,
+    "diningRate": 6,
+    "groceryRate": 6,
+    "transportRate": 6,
+    "onlineLocalRate": 6,
+    "onlineOverseasRate": 1.68,
+    "overseasRate": 1.68,
+    "flightHotelRate": 1.68,
+    "billsRate": 999,
+    "caps": [
+      {
+        "label": "Overseas Bonus (Foreign Currency)",
+        "category": [
+          "Overseas",
+          "Online (Overseas)"
+        ],
+        "limit": 10000,
+        "resetType": "Seasonal"
+      },
+      {
+        "label": "Travel Bonus (HKD Only)",
+        "category": [
+          "Flight & Hotel"
+        ],
+        "limit": 10000,
+        "resetType": "Seasonal"
+      }
+    ],
+    "adviceMessages": [
       "Online (Overseas)",
       "Need apply, first $10000 per quarter",
       "Overseas",
       "Need apply, first $10000 per quarter",
       "Flight & Hotel",
       "Need apply, first $10000 per quarter"
-    ],
-    "caps" : [
-      {
-        "resetType" : "Seasonal",
-        "limit" : 10000,
-        "label" : "Overseas Bonus (Foreign Currency)",
-        "category" : [
-          "Overseas",
-          "Online (Overseas)"
-        ]
-      },
-      {
-        "resetType" : "Seasonal",
-        "limit" : 10000,
-        "label" : "Travel Bonus (HKD Only)",
-        "category" : [
-          "Flight & Hotel"
-        ]
-      }
-    ],
-    "billsRate" : 999,
-    "bank" : "AMEX",
-    "groceryRate" : 6,
-    "overseasRate" : 1.68,
-    "flightHotelRate" : 1.68,
-    "transportRate" : 6,
-    "imageName" : "amex_explorer",
-    "onlineOverseasRate" : 1.68,
-    "supportsCashback" : true,
-    "supportsMiles" : true
+    ]
   },
   {
-    "baseRate" : 9,
-    "diningRate" : 2,
-    "name" : "Platinum Card",
-    "onlineLocalRate" : 9,
-    "id" : "amex_platinum",
-    "adviceMessages" : [
+    "id": "amex_platinum",
+    "name": "Platinum Card",
+    "bank": "AMEX",
+    "imageName": "amex_platinum",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 9,
+    "diningRate": 2,
+    "groceryRate": 2,
+    "transportRate": 9,
+    "onlineLocalRate": 9,
+    "onlineOverseasRate": 2,
+    "overseasRate": 2,
+    "flightHotelRate": 2,
+    "billsRate": 999,
+    "caps": [
+      {
+        "label": "FX Accelerator Bonus ($2/mi)",
+        "category": [
+          "Overseas",
+          "Online (Overseas)"
+        ],
+        "limit": 15000,
+        "resetType": "Seasonal"
+      },
+      {
+        "label": "Travel Accelerator Bonus ($2/mi)",
+        "category": [
+          "Flight & Hotel"
+        ],
+        "limit": 15000,
+        "resetType": "Seasonal"
+      },
+      {
+        "label": "Everyday Spend Bonus ($2/mi)",
+        "category": [
+          "Dining",
+          "Grocery"
+        ],
+        "limit": 15000,
+        "resetType": "Seasonal"
+      }
+    ],
+    "adviceMessages": [
       "Overseas",
       "Need apply, first $15000 per quarter",
       "Grocery",
@@ -60,331 +98,262 @@
       "Need apply, first $15000 per quarter",
       "Dining",
       "Enroll for Global Dining Credit & 9X Accelerator"
-    ],
-    "caps" : [
-      {
-        "resetType" : "Seasonal",
-        "limit" : 15000,
-        "label" : "FX Accelerator Bonus ($2\/mi)",
-        "category" : [
-          "Overseas",
-          "Online (Overseas)"
-        ]
-      },
-      {
-        "resetType" : "Seasonal",
-        "limit" : 15000,
-        "label" : "Travel Accelerator Bonus ($2\/mi)",
-        "category" : [
-          "Flight & Hotel"
-        ]
-      },
-      {
-        "resetType" : "Seasonal",
-        "limit" : 15000,
-        "label" : "Everyday Spend Bonus ($2\/mi)",
-        "category" : [
-          "Dining",
-          "Grocery"
-        ]
-      }
-    ],
-    "billsRate" : 999,
-    "bank" : "AMEX",
-    "groceryRate" : 2,
-    "overseasRate" : 2,
-    "flightHotelRate" : 2,
-    "transportRate" : 9,
-    "imageName" : "amex_platinum",
-    "onlineOverseasRate" : 2,
-    "supportsCashback" : true,
-    "supportsMiles" : true
+    ]
   },
   {
-    "baseRate" : 6.25,
-    "diningRate" : 0.8,
-    "name" : "World Mastercard",
-    "onlineLocalRate" : 6.25,
-    "id" : "bea_world",
-    "adviceMessages" : [
+    "id": "bea_world",
+    "name": "World Mastercard",
+    "bank": "BEA",
+    "imageName": "bea_world",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 6.25,
+    "diningRate": 0.8,
+    "groceryRate": 6.25,
+    "transportRate": 6.25,
+    "onlineLocalRate": 6.25,
+    "onlineOverseasRate": 0.8,
+    "overseasRate": 0.8,
+    "flightHotelRate": 0.8,
+    "billsRate": 0,
+    "caps": [
+      {
+        "label": "12.5X Points Cap",
+        "category": [
+          "Dining",
+          "Overseas",
+          "Online (Overseas)",
+          "Flight & Hotel"
+        ],
+        "limit": 8888,
+        "resetType": "Monthly"
+      }
+    ],
+    "adviceMessages": [
       "Basic",
       "Register '12.5X' in BEA Mall App",
       "Dining",
-      "12.5X Points ($0.8\/mi). Max $8,888\/mo",
+      "12.5X Points ($0.8/mi). Max $8,888/mo",
       "Flight & Hotel",
-      "12.5X Points ($0.8\/mi) for Travel category",
+      "12.5X Points ($0.8/mi) for Travel category",
       "Overseas",
-      "12.5X Points ($0.8\/mi) for FX spend"
-    ],
-    "caps" : [
-      {
-        "resetType" : "Monthly",
-        "limit" : 8888,
-        "label" : "12.5X Points Cap",
-        "category" : [
-          "Dining",
-          "Overseas",
-          "Online (Overseas)",
-          "Flight & Hotel"
-        ]
-      }
-    ],
-    "billsRate" : 0,
-    "bank" : "BEA",
-    "groceryRate" : 6.25,
-    "overseasRate" : 0.8,
-    "flightHotelRate" : 0.8,
-    "transportRate" : 6.25,
-    "imageName" : "bea_world",
-    "onlineOverseasRate" : 0.8,
-    "supportsCashback" : true,
-    "supportsMiles" : true
+      "12.5X Points ($0.8/mi) for FX spend"
+    ]
   },
   {
-    "baseRate" : 25,
-    "diningRate" : 25,
-    "name" : "GOAL Card",
-    "onlineLocalRate" : 2.27,
-    "id" : "bea_goal",
-    "adviceMessages" : [
-      "Transport",
-      "6.4% ($1.56\/mi) Bus\/Taxi\/Gas",
-      "Basic",
-      "Hurdle: $2,000\/mo spend",
-      "Flight & Hotel",
-      "6.4% ($1.56\/mi) Hotels\/Airlines",
-      "Online (Local)",
-      "4.4% ($2.27\/mi) Online\/Mobile Pay"
-    ],
-    "caps" : [
+    "id": "bea_goal",
+    "name": "GOAL Card",
+    "bank": "BEA",
+    "imageName": "bea_goal",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 25,
+    "diningRate": 25,
+    "groceryRate": 25,
+    "transportRate": 1.56,
+    "onlineLocalRate": 2.27,
+    "onlineOverseasRate": 2.27,
+    "overseasRate": 25,
+    "flightHotelRate": 1.56,
+    "billsRate": 0,
+    "caps": [
       {
-        "resetType" : "Monthly",
-        "hurdle" : 2000,
-        "limit" : 4545,
-        "label" : "Extra $200 Rebate Cap",
-        "category" : [
+        "label": "Extra $200 Rebate Cap",
+        "category": [
           "Online (Local)",
           "Online (Overseas)",
           "Transport",
           "Flight & Hotel"
-        ]
+        ],
+        "limit": 4545,
+        "hurdle": 2000,
+        "resetType": "Monthly"
       }
     ],
-    "billsRate" : 0,
-    "bank" : "BEA",
-    "groceryRate" : 25,
-    "overseasRate" : 25,
-    "flightHotelRate" : 1.56,
-    "transportRate" : 1.56,
-    "imageName" : "bea_goal",
-    "onlineOverseasRate" : 2.27,
-    "supportsCashback" : true,
-    "supportsMiles" : true
-  },
-  {
-    "baseRate" : 25,
-    "diningRate" : 8.33,
-    "name" : "UnionPay Diamond",
-    "onlineLocalRate" : 25,
-    "id" : "bea_up_diamond",
-    "adviceMessages" : [
-      "Overseas",
-      "10X Points ($2.5\/mi) for FX. $0 Transaction Fee",
-      "Dining",
-      "3X Points ($8.33\/mi) Local. 1.6% if via UnionPay App",
-      "AAVS\/Bills",
-      "1X Points ($25\/mi) via BEA Online. Max 20k pts\/mo",
-      "Basic",
-      "Mainland CNY: 12X ($2.08\/mi). No registration needed"
-    ],
-    "caps" : [
-      {
-        "resetType" : "Monthly",
-        "limit" : 11111,
-        "label" : "Extra 10X\/12X Points Cap (100k pts)",
-        "category" : [
-          "Overseas",
-          "Online (Overseas)",
-          "Flight & Hotel"
-        ]
-      }
-    ],
-    "billsRate" : 25,
-    "bank" : "BEA",
-    "groceryRate" : 25,
-    "overseasRate" : 2.5,
-    "flightHotelRate" : 2.5,
-    "transportRate" : 25,
-    "imageName" : "bea_up_diamond",
-    "onlineOverseasRate" : 2.5,
-    "supportsCashback" : true,
-    "supportsMiles" : true
-  },
-  {
-    "baseRate" : 15,
-    "diningRate" : 1.5,
-    "name" : "Cheers Visa Infinite",
-    "onlineLocalRate" : 15,
-    "id" : "boc_cheers_vi",
-    "adviceMessages" : [
-      "Online (Overseas)",
-      "Hurdle $5000\/mo, first $25000\/mo",
-      "Dining",
-      "Hurdle $5000\/mo, first $10000\/mo",
-      "Overseas",
-      "Hurdle $5000\/mo, first $25000\/mo",
-      "Flight & Hotel",
-      "Hurdle $5000\/mo, first $25000\/mo"
-    ],
-    "caps" : [
-      {
-        "resetType" : "Monthly",
-        "hurdle" : 5000,
-        "limit" : 10000,
-        "label" : "10X Dining Bonus",
-        "category" : [
-          "Dining"
-        ]
-      },
-      {
-        "resetType" : "Monthly",
-        "hurdle" : 5000,
-        "limit" : 25000,
-        "label" : "10X Travel Bonus",
-        "category" : [
-          "Overseas",
-          "Online (Overseas)",
-          "Flight & Hotel"
-        ]
-      },
-      {
-        "resetType" : "Monthly",
-        "limit" : 10000,
-        "label" : "AAVS\/Bills Cap",
-        "category" : [
-          "AAVS\/Bills"
-        ]
-      }
-    ],
-    "billsRate" : 15,
-    "bank" : "BOC",
-    "groceryRate" : 15,
-    "overseasRate" : 1.5,
-    "flightHotelRate" : 1.5,
-    "transportRate" : 15,
-    "imageName" : "boc_cheers_vi",
-    "onlineOverseasRate" : 1.5,
-    "supportsCashback" : true,
-    "supportsMiles" : true
-  },
-  {
-    "flightHotelRate" : 1.9,
-    "imageName" : "boc_cheers_vs",
-    "bank" : "BOC",
-    "transportRate" : 15,
-    "caps" : [
-      {
-        "resetType" : "Monthly",
-        "hurdle" : 5000,
-        "limit" : 7500,
-        "label" : "8X Dining Bonus",
-        "category" : [
-          "Dining"
-        ]
-      },
-      {
-        "resetType" : "Monthly",
-        "hurdle" : 5000,
-        "limit" : 18750,
-        "label" : "8X Travel Bonus",
-        "category" : [
-          "Overseas",
-          "Online (Overseas)",
-          "Flight & Hotel"
-        ]
-      },
-      {
-        "resetType" : "Monthly",
-        "limit" : 10000,
-        "label" : "AAVS\/Bills Cap",
-        "category" : [
-          "AAVS\/Bills"
-        ]
-      }
-    ],
-    "overseasRate" : 1.9,
-    "onlineLocalRate" : 15,
-    "onlineOverseasRate" : 1.9,
-    "id" : "boc_cheers_vs",
-    "name" : "Cheers Visa Signature",
-    "supportsCashback" : true,
-    "adviceMessages" : [
-      "Dining",
-      "Hurdle $5000\/mo, first $7500\/mo",
-      "Online (Overseas)",
-      "Hurdle $5000\/mo, first $18750\/mo",
-      "Flight & Hotel",
-      "Hurdle $5000\/mo, first $18750\/mo",
-      "Overseas",
-      "Hurdle $5000\/mo, first $18750\/mo"
-    ],
-    "supportsMiles" : true,
-    "diningRate" : 1.9,
-    "billsRate" : 15,
-    "groceryRate" : 15,
-    "baseRate" : 15
-  },
-  {
-    "flightHotelRate" : 3.75,
-    "imageName" : "boc_chill_platinum",
-    "bank" : "BOC",
-    "transportRate" : 1.88,
-    "caps" : [
-      {
-        "resetType" : "Monthly",
-        "limit" : 4166,
-        "label" : "Extra Rebate Pool (Max $150)",
-        "category" : [
-          "Dining",
-          "Transport",
-          "Online (Local)",
-          "Online (Overseas)",
-          "Overseas",
-          "Flight & Hotel"
-        ]
-      }
-    ],
-    "overseasRate" : 3.75,
-    "onlineLocalRate" : 3.75,
-    "onlineOverseasRate" : 3.75,
-    "id" : "boc_chill_platinum",
-    "name" : "Chill Platinum Mastercard",
-    "supportsCashback" : true,
-    "adviceMessages" : [
-      "Online (Local)",
-      "First $4166 per month",
-      "Dining",
-      "Hurdle $1000 physical spend, first $1974\/mo",
-      "Overseas",
-      "First $4166 per month",
+    "adviceMessages": [
       "Transport",
-      "Designated Merchants only (KMB\/Citybus)"
-    ],
-    "supportsMiles" : true,
-    "diningRate" : 1.88,
-    "billsRate" : 15,
-    "groceryRate" : 15,
-    "baseRate" : 15
+      "6.4% ($1.56/mi) Bus/Taxi/Gas",
+      "Basic",
+      "Hurdle: $2,000/mo spend",
+      "Flight & Hotel",
+      "6.4% ($1.56/mi) Hotels/Airlines",
+      "Online (Local)",
+      "4.4% ($2.27/mi) Online/Mobile Pay"
+    ]
   },
   {
-    "flightHotelRate" : 3,
-    "imageName" : "boc_chill_world",
-    "bank" : "BOC",
-    "transportRate" : 1.5,
-    "caps" : [
+    "id": "bea_up_diamond",
+    "name": "UnionPay Diamond",
+    "bank": "BEA",
+    "imageName": "bea_up_diamond",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 25,
+    "diningRate": 8.33,
+    "groceryRate": 25,
+    "transportRate": 25,
+    "onlineLocalRate": 25,
+    "onlineOverseasRate": 2.5,
+    "overseasRate": 2.5,
+    "flightHotelRate": 2.5,
+    "billsRate": 25,
+    "caps": [
       {
-        "limit" : 3260,
-        "category" : [
+        "label": "Extra 10X/12X Points Cap (100k pts)",
+        "category": [
+          "Overseas",
+          "Online (Overseas)",
+          "Flight & Hotel"
+        ],
+        "limit": 11111,
+        "resetType": "Monthly"
+      }
+    ],
+    "adviceMessages": [
+      "Overseas",
+      "10X Points ($2.5/mi) for FX. $0 Transaction Fee",
+      "Dining",
+      "3X Points ($8.33/mi) Local. 1.6% if via UnionPay App",
+      "AAVS/Bills",
+      "1X Points ($25/mi) via BEA Online. Max 20k pts/mo",
+      "Basic",
+      "Mainland CNY: 12X ($2.08/mi). No registration needed"
+    ]
+  },
+  {
+    "id": "boc_cheers_vi",
+    "name": "Cheers Visa Infinite",
+    "bank": "BOC",
+    "imageName": "boc_cheers_vi",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 15,
+    "diningRate": 1.5,
+    "groceryRate": 15,
+    "transportRate": 15,
+    "onlineLocalRate": 15,
+    "onlineOverseasRate": 1.5,
+    "overseasRate": 1.5,
+    "flightHotelRate": 1.5,
+    "billsRate": 15,
+    "caps": [
+      {
+        "label": "10X Dining Bonus",
+        "category": [
+          "Dining"
+        ],
+        "limit": 10000,
+        "hurdle": 5000,
+        "resetType": "Monthly"
+      },
+      {
+        "label": "10X Travel Bonus",
+        "category": [
+          "Overseas",
+          "Online (Overseas)",
+          "Flight & Hotel"
+        ],
+        "limit": 25000,
+        "hurdle": 5000,
+        "resetType": "Monthly"
+      },
+      {
+        "label": "AAVS/Bills Cap",
+        "category": [
+          "AAVS/Bills"
+        ],
+        "limit": 10000,
+        "resetType": "Monthly"
+      }
+    ],
+    "adviceMessages": [
+      "Online (Overseas)",
+      "Hurdle $5000/mo, first $25000/mo",
+      "Dining",
+      "Hurdle $5000/mo, first $10000/mo",
+      "Overseas",
+      "Hurdle $5000/mo, first $25000/mo",
+      "Flight & Hotel",
+      "Hurdle $5000/mo, first $25000/mo"
+    ]
+  },
+  {
+    "id": "boc_cheers_vs",
+    "name": "Cheers Visa Signature",
+    "bank": "BOC",
+    "imageName": "boc_cheers_vs",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 15,
+    "diningRate": 1.9,
+    "groceryRate": 15,
+    "transportRate": 15,
+    "onlineLocalRate": 15,
+    "onlineOverseasRate": 1.9,
+    "overseasRate": 1.9,
+    "flightHotelRate": 1.9,
+    "billsRate": 15,
+    "caps": [
+      {
+        "label": "8X Dining Bonus",
+        "category": [
+          "Dining"
+        ],
+        "limit": 7500,
+        "hurdle": 5000,
+        "resetType": "Monthly"
+      },
+      {
+        "label": "8X Travel Bonus",
+        "category": [
+          "Overseas",
+          "Online (Overseas)",
+          "Flight & Hotel"
+        ],
+        "limit": 18750,
+        "hurdle": 5000,
+        "resetType": "Monthly"
+      },
+      {
+        "label": "AAVS/Bills Cap",
+        "category": [
+          "AAVS/Bills"
+        ],
+        "limit": 10000,
+        "resetType": "Monthly"
+      }
+    ],
+    "adviceMessages": [
+      "Dining",
+      "Hurdle $5000/mo, first $7500/mo",
+      "Online (Overseas)",
+      "Hurdle $5000/mo, first $18750/mo",
+      "Flight & Hotel",
+      "Hurdle $5000/mo, first $18750/mo",
+      "Overseas",
+      "Hurdle $5000/mo, first $18750/mo"
+    ]
+  },
+  {
+    "id": "boc_chill_platinum",
+    "name": "Chill Platinum Mastercard",
+    "bank": "BOC",
+    "imageName": "boc_chill_platinum",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 15,
+    "diningRate": 1.88,
+    "groceryRate": 15,
+    "transportRate": 1.88,
+    "onlineLocalRate": 3.75,
+    "onlineOverseasRate": 3.75,
+    "overseasRate": 3.75,
+    "flightHotelRate": 3.75,
+    "billsRate": 15,
+    "caps": [
+      {
+        "label": "Extra Rebate Pool (Max $150)",
+        "category": [
           "Dining",
           "Transport",
           "Online (Local)",
@@ -392,534 +361,555 @@
           "Overseas",
           "Flight & Hotel"
         ],
-        "resetType" : "Monthly",
-        "label" : "Extra Rebate Pool (Max $150)"
+        "limit": 4166,
+        "resetType": "Monthly"
       }
     ],
-    "overseasRate" : 3,
-    "onlineLocalRate" : 3,
-    "onlineOverseasRate" : 3,
-    "name" : "Chill World",
-    "id" : "boc_chill_world",
-    "supportsCashback" : true,
-    "adviceMessages" : [
+    "adviceMessages": [
+      "Online (Local)",
+      "First $4166 per month",
       "Dining",
-      "Hurdle $1500 physical spend, first $1562\/mo",
+      "Hurdle $1000 physical spend, first $1974/mo",
+      "Overseas",
+      "First $4166 per month",
+      "Transport",
+      "Designated Merchants only (KMB/Citybus)"
+    ]
+  },
+  {
+    "id": "boc_chill_world",
+    "name": "Chill World",
+    "bank": "BOC",
+    "imageName": "boc_chill_world",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 15,
+    "diningRate": 1.5,
+    "groceryRate": 15,
+    "transportRate": 1.5,
+    "onlineLocalRate": 3,
+    "onlineOverseasRate": 3,
+    "overseasRate": 3,
+    "flightHotelRate": 3,
+    "billsRate": 15,
+    "caps": [
+      {
+        "label": "Extra Rebate Pool (Max $150)",
+        "category": [
+          "Dining",
+          "Transport",
+          "Online (Local)",
+          "Online (Overseas)",
+          "Overseas",
+          "Flight & Hotel"
+        ],
+        "limit": 3260,
+        "resetType": "Monthly"
+      }
+    ],
+    "adviceMessages": [
+      "Dining",
+      "Hurdle $1500 physical spend, first $1562/mo",
       "Online (Local)",
       "First $3260 per month",
       "Overseas",
       "First $3260 per month",
       "Transport",
-      "Designated Merchants only (KMB\/Citybus)"
-    ],
-    "supportsMiles" : true,
-    "diningRate" : 1.5,
-    "billsRate" : 15,
-    "groceryRate" : 15,
-    "baseRate" : 15
+      "Designated Merchants only (KMB/Citybus)"
+    ]
   },
   {
-    "flightHotelRate" : 1,
-    "imageName" : "boc_bliss",
-    "bank" : "BOC",
-    "transportRate" : 15,
-    "caps" : [
+    "id": "boc_bliss",
+    "name": "Bliss Card",
+    "bank": "BOC",
+    "imageName": "boc_bliss",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 15,
+    "diningRate": 15,
+    "groceryRate": 15,
+    "transportRate": 15,
+    "onlineLocalRate": 1.5,
+    "onlineOverseasRate": 1.5,
+    "overseasRate": 15,
+    "flightHotelRate": 1,
+    "billsRate": 999,
+    "caps": [
       {
-        "limit" : 10000,
-        "category" : [
+        "label": "Online 4% Cap",
+        "category": [
           "Online (Local)",
           "Online (Overseas)"
         ],
-        "resetType" : "Monthly",
-        "label" : "Online 4% Cap"
+        "limit": 10000,
+        "resetType": "Monthly"
       },
       {
-        "limit" : 10000,
-        "category" : [
+        "label": "Selected Online 6% Cap",
+        "category": [
           "Flight & Hotel"
         ],
-        "resetType" : "Monthly",
-        "label" : "Selected Online 6% Cap"
+        "limit": 10000,
+        "resetType": "Monthly"
       }
     ],
-    "overseasRate" : 15,
-    "onlineLocalRate" : 1.5,
-    "onlineOverseasRate" : 1.5,
-    "name" : "Bliss Card",
-    "id" : "boc_bliss",
-    "supportsCashback" : true,
-    "adviceMessages" : [
+    "adviceMessages": [
       "Online (Local)",
       "First $10,000 per month",
       "Flight & Hotel",
       "Selected Online Merchants only ($10k cap)"
-    ],
-    "supportsMiles" : true,
-    "diningRate" : 15,
-    "billsRate" : 999,
-    "groceryRate" : 15,
-    "baseRate" : 15
+    ]
   },
   {
-    "flightHotelRate" : 3,
-    "imageName" : "citi_pm",
-    "bank" : "Citi",
-    "transportRate" : 8,
-    "caps" : [
+    "id": "citi_pm",
+    "name": "PremierMiles",
+    "bank": "Citi",
+    "imageName": "citi_pm",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 8,
+    "diningRate": 8,
+    "groceryRate": 8,
+    "transportRate": 8,
+    "onlineLocalRate": 8,
+    "onlineOverseasRate": 3,
+    "overseasRate": 3,
+    "flightHotelRate": 3,
+    "billsRate": 999,
+    "caps": [
       {
-        "limit" : 999999,
-        "category" : [
+        "label": "Overseas $3/mi Hurdle",
+        "category": [
           "Overseas",
           "Online (Overseas)",
           "Flight & Hotel"
         ],
-        "resetType" : "Monthly",
-        "hurdle" : 20000,
-        "label" : "Overseas $3\/mi Hurdle"
+        "limit": 999999,
+        "hurdle": 20000,
+        "resetType": "Monthly"
       }
     ],
-    "overseasRate" : 3,
-    "onlineLocalRate" : 8,
-    "onlineOverseasRate" : 3,
-    "name" : "PremierMiles",
-    "id" : "citi_pm",
-    "supportsCashback" : true,
-    "adviceMessages" : [
+    "adviceMessages": [
       "Online (Overseas)",
-      "Hurdle $20,000\/mo for $3\/mi (else $4\/mi)",
+      "Hurdle $20,000/mo for $3/mi (else $4/mi)",
       "Flight & Hotel",
-      "Hurdle $20,000\/mo for $3\/mi (else $4\/mi)",
+      "Hurdle $20,000/mo for $3/mi (else $4/mi)",
       "Overseas",
-      "Hurdle $20,000\/mo for $3\/mi (else $4\/mi)"
-    ],
-    "supportsMiles" : true,
-    "diningRate" : 8,
-    "billsRate" : 999,
-    "groceryRate" : 8,
-    "baseRate" : 8
+      "Hurdle $20,000/mo for $3/mi (else $4/mi)"
+    ]
   },
   {
-    "onlineLocalRate" : 6,
-    "baseRate" : 6,
-    "name" : "Prestige",
-    "supportsMiles" : true,
-    "imageName" : "citi_prestige",
-    "bank" : "Citi",
-    "transportRate" : 6,
-    "billsRate" : 999,
-    "adviceMessages" : [
+    "id": "citi_prestige",
+    "name": "Prestige",
+    "bank": "Citi",
+    "imageName": "citi_prestige",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 6,
+    "diningRate": 6,
+    "groceryRate": 6,
+    "transportRate": 6,
+    "onlineLocalRate": 6,
+    "onlineOverseasRate": 4,
+    "overseasRate": 4,
+    "flightHotelRate": 4,
+    "billsRate": 999,
+    "caps": [],
+    "adviceMessages": [
       "Overseas",
-      "Non-HKD only ($4\/mi)",
+      "Non-HKD only ($4/mi)",
       "Flight & Hotel",
       "Unlimited '4th Night Free' on 4+ night stays",
       "Dining",
       "Exclusive MICHELIN dining perks"
-    ],
-    "id" : "citi_prestige",
-    "caps" : [
-
-    ],
-    "onlineOverseasRate" : 4,
-    "groceryRate" : 6,
-    "supportsCashback" : true,
-    "flightHotelRate" : 4,
-    "diningRate" : 6,
-    "overseasRate" : 4
+    ]
   },
   {
-    "onlineLocalRate" : 15,
-    "baseRate" : 15,
-    "name" : "Cash Back Card",
-    "supportsMiles" : true,
-    "imageName" : "citi_cashback",
-    "bank" : "Citi",
-    "transportRate" : 15,
-    "billsRate" : 15,
-    "adviceMessages" : [
+    "id": "citi_cashback",
+    "name": "Cash Back Card",
+    "bank": "Citi",
+    "imageName": "citi_cashback",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 15,
+    "diningRate": 7.5,
+    "groceryRate": 15,
+    "transportRate": 15,
+    "onlineLocalRate": 15,
+    "onlineOverseasRate": 7.5,
+    "overseasRate": 7.5,
+    "flightHotelRate": 7.5,
+    "billsRate": 15,
+    "caps": [],
+    "adviceMessages": [
       "Flight & Hotel",
       "Unlimited 2% at hotels globally",
       "Dining",
       "Unlimited 2% at HK restaurants",
       "Overseas",
       "Unlimited 2% for all FX spend"
-    ],
-    "id" : "citi_cashback",
-    "caps" : [
-
-    ],
-    "onlineOverseasRate" : 7.5,
-    "groceryRate" : 15,
-    "supportsCashback" : true,
-    "flightHotelRate" : 7.5,
-    "diningRate" : 7.5,
-    "overseasRate" : 7.5
+    ]
   },
   {
-    "onlineLocalRate" : 1.86,
-    "baseRate" : 15,
-    "name" : "Rewards Card",
-    "supportsMiles" : true,
-    "imageName" : "citi_rewards",
-    "bank" : "Citi",
-    "transportRate" : 5.5,
-    "billsRate" : 15,
-    "adviceMessages" : [
+    "id": "citi_rewards",
+    "name": "Rewards Card",
+    "bank": "Citi",
+    "imageName": "citi_rewards",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 15,
+    "diningRate": 15,
+    "groceryRate": 15,
+    "transportRate": 5.5,
+    "onlineLocalRate": 1.86,
+    "onlineOverseasRate": 15,
+    "overseasRate": 15,
+    "flightHotelRate": 15,
+    "billsRate": 15,
+    "caps": [
+      {
+        "label": "Shopping & Entertainment 8.1X Cap",
+        "category": [
+          "Online (Local)"
+        ],
+        "limit": 12500,
+        "resetType": "Monthly"
+      }
+    ],
+    "adviceMessages": [
       "Transport",
-      "2.7X for UnionPay QuickPass\/QR",
+      "2.7X for UnionPay QuickPass/QR",
       "Overseas",
       "1.95% FX fee",
       "Online (Local)",
-      "8.1X for Shopping\/Entertainment (first $12.5k\/mo)"
-    ],
-    "id" : "citi_rewards",
-    "caps" : [
-      {
-        "category" : [
-          "Online (Local)"
-        ],
-        "limit" : 12500,
-        "resetType" : "Monthly",
-        "label" : "Shopping & Entertainment 8.1X Cap"
-      }
-    ],
-    "onlineOverseasRate" : 15,
-    "groceryRate" : 15,
-    "supportsCashback" : true,
-    "flightHotelRate" : 15,
-    "diningRate" : 15,
-    "overseasRate" : 15
+      "8.1X for Shopping/Entertainment (first $12.5k/mo)"
+    ]
   },
   {
-    "onlineLocalRate" : 1.86,
-    "baseRate" : 15,
-    "name" : "Rewards UnionPay",
-    "supportsMiles" : true,
-    "imageName" : "citi_rewards_union",
-    "bank" : "Citi",
-    "transportRate" : 5.5,
-    "billsRate" : 15,
-    "adviceMessages" : [
+    "id": "citi_rewards_up",
+    "name": "Rewards UnionPay",
+    "bank": "Citi",
+    "imageName": "citi_rewards_union",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 15,
+    "diningRate": 15,
+    "groceryRate": 15,
+    "transportRate": 5.5,
+    "onlineLocalRate": 1.86,
+    "onlineOverseasRate": 15,
+    "overseasRate": 15,
+    "flightHotelRate": 15,
+    "billsRate": 15,
+    "caps": [
+      {
+        "label": "Shopping & Entertainment 8.1X Cap",
+        "category": [
+          "Online (Local)"
+        ],
+        "limit": 15972,
+        "resetType": "Monthly"
+      },
+      {
+        "label": "QuickPass 10X Promotion Cap",
+        "category": [
+          "Transport"
+        ],
+        "limit": 10000,
+        "resetType": "Monthly"
+      }
+    ],
+    "adviceMessages": [
       "Transport",
-      "1% Points Rebate (2.7X) via UnionPay App\/QuickPass",
+      "1% Points Rebate (2.7X) via UnionPay App/QuickPass",
       "Overseas",
       "1.95% FX fee WAIVED",
       "Online (Local)",
       "8.1X Points for Shopping & Entertainment"
-    ],
-    "id" : "citi_rewards_up",
-    "caps" : [
-      {
-        "category" : [
-          "Online (Local)"
-        ],
-        "limit" : 15972,
-        "resetType" : "Monthly",
-        "label" : "Shopping & Entertainment 8.1X Cap"
-      },
-      {
-        "category" : [
-          "Transport"
-        ],
-        "limit" : 10000,
-        "resetType" : "Monthly",
-        "label" : "QuickPass 10X Promotion Cap"
-      }
-    ],
-    "onlineOverseasRate" : 15,
-    "groceryRate" : 15,
-    "supportsCashback" : true,
-    "flightHotelRate" : 15,
-    "diningRate" : 15,
-    "overseasRate" : 15
+    ]
   },
   {
-    "onlineLocalRate" : 6,
-    "baseRate" : 6,
-    "name" : "BA Platinum",
-    "supportsMiles" : true,
-    "imageName" : "dahsing_ba",
-    "bank" : "Dah Sing",
-    "transportRate" : 6,
-    "billsRate" : 999,
-    "adviceMessages" : [
+    "id": "dahsing_ba",
+    "name": "BA Platinum",
+    "bank": "Dah Sing",
+    "imageName": "dahsing_ba",
+    "supportsMiles": true,
+    "supportsCashback": false,
+    "baseRate": 6,
+    "diningRate": 6,
+    "groceryRate": 6,
+    "transportRate": 6,
+    "onlineLocalRate": 6,
+    "onlineOverseasRate": 4,
+    "overseasRate": 4,
+    "flightHotelRate": 6,
+    "billsRate": 999,
+    "caps": [],
+    "adviceMessages": [
       "Overseas",
-      "HK$4\/mi",
+      "HK$4/mi",
       "Basic",
-      "HK$3\/mi on Birthday",
+      "HK$3/mi on Birthday",
       "Flight & Hotel",
-      "HK$3\/mi via ba.com"
-    ],
-    "id" : "dahsing_ba",
-    "caps" : [
-
-    ],
-    "onlineOverseasRate" : 4,
-    "groceryRate" : 6,
-    "supportsCashback" : false,
-    "flightHotelRate" : 6,
-    "diningRate" : 6,
-    "overseasRate" : 4
+      "HK$3/mi via ba.com"
+    ]
   },
   {
-    "onlineLocalRate" : 8,
-    "baseRate" : 8,
-    "name" : "ANA World Mastercard",
-    "supportsMiles" : true,
-    "imageName" : "dahsing_ana",
-    "bank" : "Dah Sing",
-    "transportRate" : 8,
-    "billsRate" : 999,
-    "adviceMessages" : [
+    "id": "dahsing_ana",
+    "name": "ANA World Mastercard",
+    "bank": "Dah Sing",
+    "imageName": "dahsing_ana",
+    "supportsMiles": true,
+    "supportsCashback": false,
+    "baseRate": 8,
+    "diningRate": 8,
+    "groceryRate": 8,
+    "transportRate": 8,
+    "onlineLocalRate": 8,
+    "onlineOverseasRate": 4,
+    "overseasRate": 4,
+    "flightHotelRate": 8,
+    "billsRate": 999,
+    "caps": [],
+    "adviceMessages": [
       "Overseas",
-      "HK$4\/mi (FX only)",
+      "HK$4/mi (FX only)",
       "Flight & Hotel",
       "90% off ANA in-flight shopping",
       "Basic",
       "Priority check-in for ANA flights"
-    ],
-    "id" : "dahsing_ana",
-    "caps" : [
-
-    ],
-    "onlineOverseasRate" : 4,
-    "groceryRate" : 8,
-    "supportsCashback" : false,
-    "flightHotelRate" : 8,
-    "diningRate" : 8,
-    "overseasRate" : 4
+    ]
   },
   {
-    "onlineLocalRate" : 7.2,
-    "baseRate" : 7.2,
-    "name" : "Eminent Visa Signature",
-    "supportsMiles" : true,
-    "imageName" : "dbs_eminent_vs",
-    "bank" : "DBS",
-    "transportRate" : 7.2,
-
-    "billsRate" : 999,
-    "adviceMessages" : [
-      "Transport",
-      "Flat 1% rebate ($7.2\/mi)",
-      "Dining",
-      "≥$300: $1.44\/mi (5%); <$300: $7.2\/mi (1%)",
-      "Grocery",
-      "Flat 1% rebate ($7.2\/mi)"
-    ],
-    "id" : "dbs_eminent",
-    "caps" : [
+    "id": "dbs_eminent",
+    "name": "Eminent Visa Signature",
+    "bank": "DBS",
+    "imageName": "dbs_eminent_vs",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 7.2,
+    "diningRate": 1.44,
+    "groceryRate": 7.2,
+    "transportRate": 7.2,
+    "onlineLocalRate": 7.2,
+    "onlineOverseasRate": 7.2,
+    "overseasRate": 7.2,
+    "flightHotelRate": 7.2,
+    "billsRate": 999,
+    "caps": [
       {
-        "category" : [
+        "label": "5% Designated Cap (Single Spend ≥$300)",
+        "category": [
           "Dining"
         ],
-        "limit" : 8000,
-        "resetType" : "Monthly",
-        "label" : "5% Designated Cap (Single Spend ≥$300)"
+        "limit": 8000,
+        "resetType": "Monthly"
       },
       {
-        "category" : [
+        "label": "1% Retail Cap",
+        "category": [
           "Grocery",
           "Transport",
           "Online (Local)",
           "Online (Overseas)",
           "Overseas",
           "Flight & Hotel",
-          "AAVS\/Bills"
+          "AAVS/Bills"
         ],
-        "limit" : 20000,
-        "resetType" : "Monthly",
-        "label" : "1% Retail Cap"
+        "limit": 20000,
+        "resetType": "Monthly"
       }
     ],
-    "onlineOverseasRate" : 7.2,
-    "groceryRate" : 7.2,
-    "supportsCashback" : true,
-    "flightHotelRate" : 7.2,
-    "diningRate" : 1.44,
-    "overseasRate" : 7.2
+    "adviceMessages": [
+      "Transport",
+      "Flat 1% rebate ($7.2/mi)",
+      "Dining",
+      "≥$300: $1.44/mi (5%); <$300: $7.2/mi (1%)",
+      "Grocery",
+      "Flat 1% rebate ($7.2/mi)"
+    ]
   },
   {
-    "onlineLocalRate" : 6,
-    "baseRate" : 6,
-    "name" : "Black World Mastercard",
-    "supportsMiles" : true,
-    "imageName" : "dbs_black_world",
-    "bank" : "DBS",
-    "transportRate" : 6,
-    "billsRate" : 12,
-    "adviceMessages" : [
-      "AAVS\/Bills",
-      "First $5000 per month only (E-wallet\/AAVS)",
-      "Overseas",
-      "Register for $2\/mi Promo (Hurdle $20k)",
-      "Online (Overseas)",
-      "Register for $2\/mi Promo (Hurdle $20k)"
-    ],
-    "id" : "dbs_black_world",
-    "caps" : [
+    "id": "dbs_black_world",
+    "name": "Black World Mastercard",
+    "bank": "DBS",
+    "imageName": "dbs_black_world",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 6,
+    "diningRate": 6,
+    "groceryRate": 6,
+    "transportRate": 6,
+    "onlineLocalRate": 6,
+    "onlineOverseasRate": 4,
+    "overseasRate": 4,
+    "flightHotelRate": 4,
+    "billsRate": 12,
+    "caps": [
       {
-        "category" : [
+        "label": "$2/mile Promo Goal",
+        "category": [
           "Overseas",
           "Online (Overseas)"
         ],
-        "limit" : 4000,
-        "hurdle" : 20000,
-        "resetType" : "Monthly",
-        "label" : "$2\/mile Promo Goal"
+        "limit": 4000,
+        "hurdle": 20000,
+        "resetType": "Monthly"
       },
       {
-        "category" : [
-          "AAVS\/Bills"
+        "label": "E-Wallet/AAVS Cap",
+        "category": [
+          "AAVS/Bills"
         ],
-        "limit" : 5000,
-        "resetType" : "Monthly",
-        "label" : "E-Wallet\/AAVS Cap"
+        "limit": 5000,
+        "resetType": "Monthly"
       }
     ],
-    "onlineOverseasRate" : 4,
-    "groceryRate" : 6,
-    "supportsCashback" : true,
-    "flightHotelRate" : 4,
-    "diningRate" : 6,
-    "overseasRate" : 4
+    "adviceMessages": [
+      "AAVS/Bills",
+      "First $5000 per month only (E-wallet/AAVS)",
+      "Overseas",
+      "Register for $2/mi Promo (Hurdle $20k)",
+      "Online (Overseas)",
+      "Register for $2/mi Promo (Hurdle $20k)"
+    ]
   },
   {
-    "caps" : [
+    "id": "hangseng_travelplus",
+    "name": "Travel+",
+    "bank": "Hang Seng",
+    "imageName": "hase_travelplus",
+    "supportsMiles": false,
+    "supportsCashback": true,
+    "baseRate": 0.4,
+    "diningRate": 5,
+    "groceryRate": 0.4,
+    "transportRate": 5,
+    "onlineLocalRate": 0.4,
+    "onlineOverseasRate": 0.4,
+    "overseasRate": 7,
+    "flightHotelRate": 6,
+    "billsRate": 0,
+    "caps": [
       {
-        "category" : [
+        "label": "Extra $500 +FUN Cap",
+        "category": [
           "Dining",
           "Transport",
           "Overseas"
         ],
-        "limit" : 10870,
-        "hurdle" : 6000,
-        "resetType" : "Monthly",
-        "label" : "Extra $500 +FUN Cap"
+        "limit": 10870,
+        "hurdle": 6000,
+        "resetType": "Monthly"
       }
     ],
-    "imageName" : "hase_travelplus",
-    "supportsCashback" : true,
-    "overseasRate" : 7,
-    "supportsMiles" : false,
-    "groceryRate" : 0.4,
-    "id" : "hangseng_travelplus",
-    "onlineOverseasRate" : 0.4,
-    "diningRate" : 5,
-    "bank" : "Hang Seng",
-    "baseRate" : 0.4,
-    "billsRate" : 0,
-    "name" : "Travel+",
-    "flightHotelRate" : 6,
-    "onlineLocalRate" : 0.4,
-    "adviceMessages" : [
+    "adviceMessages": [
       "Basic",
-      "Hurdle: $6k\/mo",
+      "Hurdle: $6k/mo",
       "Transport",
       "5% Local",
       "Dining",
       "5% Local Physical",
       "Overseas",
-      "7% (JP\/KR\/TH\/CN\/MO\/TW) or 5% (Other FX) Physical"
-    ],
-    "transportRate" : 5
+      "7% (JP/KR/TH/CN/MO/TW) or 5% (Other FX) Physical"
+    ]
   },
   {
-    "caps" : [
+    "id": "hangseng_mmpower",
+    "name": "MMPOWER",
+    "bank": "Hang Seng",
+    "imageName": "hase_mmpower",
+    "supportsMiles": false,
+    "supportsCashback": true,
+    "baseRate": 0.4,
+    "diningRate": 1,
+    "groceryRate": 0.4,
+    "transportRate": 0.4,
+    "onlineLocalRate": 5,
+    "onlineOverseasRate": 5,
+    "overseasRate": 6,
+    "flightHotelRate": 5,
+    "billsRate": 0,
+    "caps": [
       {
-        "category" : [
+        "label": "Extra $500 +FUN Cap",
+        "category": [
           "Online (Local)",
           "Online (Overseas)",
           "Overseas",
           "Dining"
         ],
-        "limit" : 10870,
-        "hurdle" : 5000,
-        "resetType" : "Monthly",
-        "label" : "Extra $500 +FUN Cap"
+        "limit": 10870,
+        "hurdle": 5000,
+        "resetType": "Monthly"
       }
     ],
-    "imageName" : "hase_mmpower",
-    "supportsCashback" : true,
-    "overseasRate" : 6,
-    "supportsMiles" : false,
-    "groceryRate" : 0.4,
-    "id" : "hangseng_mmpower",
-    "onlineOverseasRate" : 5,
-    "diningRate" : 1,
-    "bank" : "Hang Seng",
-    "baseRate" : 0.4,
-    "billsRate" : 0,
-    "name" : "MMPOWER",
-    "flightHotelRate" : 5,
-    "onlineLocalRate" : 5,
-    "adviceMessages" : [
+    "adviceMessages": [
       "Dining",
       "1% Select Category",
       "Basic",
-      "Hurdle: $5,000\/mo total spend",
+      "Hurdle: $5,000/mo total spend",
       "Online (Local)",
-      "5% Rebate (Cap $10,870\/mo)",
+      "5% Rebate (Cap $10,870/mo)",
       "Overseas",
-      "6% Rebate (Cap $8,929\/mo)"
-    ],
-    "transportRate" : 0.4
+      "6% Rebate (Cap $8,929/mo)"
+    ]
   },
   {
-    "caps" : [
-
-    ],
-    "imageName" : "hase_enjoy",
-    "supportsCashback" : true,
-    "overseasRate" : 0.5,
-    "supportsMiles" : false,
-    "groceryRate" : 1.5,
-    "id" : "hangseng_enjoy",
-    "onlineOverseasRate" : 0.5,
-    "diningRate" : 2,
-    "bank" : "Hang Seng",
-    "baseRate" : 0.5,
-    "billsRate" : 0,
-    "name" : "enJoy Card",
-    "flightHotelRate" : 0.5,
-    "onlineLocalRate" : 0.5,
-    "adviceMessages" : [
+    "id": "hangseng_enjoy",
+    "name": "enJoy Card",
+    "bank": "Hang Seng",
+    "imageName": "hase_enjoy",
+    "supportsMiles": false,
+    "supportsCashback": true,
+    "baseRate": 0.5,
+    "diningRate": 2,
+    "groceryRate": 1.5,
+    "transportRate": 0.5,
+    "onlineLocalRate": 0.5,
+    "onlineOverseasRate": 0.5,
+    "overseasRate": 0.5,
+    "flightHotelRate": 0.5,
+    "billsRate": 0,
+    "caps": [],
+    "adviceMessages": [
       "Dining",
-      "4X Points at KFC\/Pizza Hut\/Maxim's",
+      "4X Points at KFC/Pizza Hut/Maxim's",
       "Grocery",
-      "3X Points at Wellcome\/7-11. Discount on 3rd\/13th\/23rd",
+      "3X Points at Wellcome/7-11. Discount on 3rd/13th/23rd",
       "Basic",
       "Points used as cash via yuu App (200 pts = $1)"
-    ],
-    "transportRate" : 0.5
+    ]
   },
   {
-    "caps" : [
+    "id": "hsbc_em",
+    "name": "EveryMile",
+    "bank": "HSBC",
+    "imageName": "hsbc_everymile",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 5,
+    "diningRate": 2,
+    "groceryRate": 5,
+    "transportRate": 2,
+    "onlineLocalRate": 5,
+    "onlineOverseasRate": 2,
+    "overseasRate": 2,
+    "flightHotelRate": 2,
+    "billsRate": 12.5,
+    "caps": [
       {
-        "category" : [
+        "label": "Overseas Bonus ($2/mi)",
+        "category": [
           "Overseas",
           "Online (Overseas)"
         ],
-        "limit" : 15000,
-        "hurdle" : 12000,
-        "resetType" : "Per Phase",
-        "label" : "Overseas Bonus ($2\/mi)"
+        "limit": 15000,
+        "hurdle": 12000,
+        "resetType": "Per Phase"
       }
     ],
-    "imageName" : "hsbc_everymile",
-    "supportsCashback" : true,
-    "overseasRate" : 2,
-    "supportsMiles" : true,
-    "groceryRate" : 5,
-    "id" : "hsbc_em",
-    "onlineOverseasRate" : 2,
-    "diningRate" : 2,
-    "bank" : "HSBC",
-    "baseRate" : 5,
-    "billsRate" : 12.5,
-    "name" : "EveryMile",
-    "flightHotelRate" : 2,
-    "onlineLocalRate" : 5,
-    "adviceMessages" : [
+    "adviceMessages": [
       "Overseas",
       "Need apply, spend minimum $12000 per phase",
       "Online (Overseas)",
@@ -930,50 +920,65 @@
       "Designated Merchants only",
       "Dining",
       "Designated Merchants only"
-    ],
-    "transportRate" : 2
+    ]
   },
   {
-    "caps" : [
+    "id": "hsbc_red",
+    "name": "Red Card",
+    "bank": "HSBC",
+    "imageName": "hsbc_red",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 25,
+    "diningRate": 25,
+    "groceryRate": 25,
+    "transportRate": 25,
+    "onlineLocalRate": 2.5,
+    "onlineOverseasRate": 2.5,
+    "overseasRate": 25,
+    "flightHotelRate": 2.5,
+    "billsRate": 25,
+    "caps": [
       {
-        "category" : [
+        "label": "Online Bonus (4%)",
+        "category": [
           "Online (Local)",
           "Online (Overseas)",
           "Flight & Hotel"
         ],
-        "limit" : 10000,
-        "resetType" : "Monthly",
-        "label" : "Online Bonus (4%)"
+        "limit": 10000,
+        "resetType": "Monthly"
       }
     ],
-    "imageName" : "hsbc_red",
-    "supportsCashback" : true,
-    "overseasRate" : 25,
-    "supportsMiles" : true,
-    "groceryRate" : 25,
-    "id" : "hsbc_red",
-    "onlineOverseasRate" : 2.5,
-    "diningRate" : 25,
-    "bank" : "HSBC",
-    "baseRate" : 25,
-    "billsRate" : 25,
-    "name" : "Red Card",
-    "flightHotelRate" : 2.5,
-    "onlineLocalRate" : 2.5,
-    "adviceMessages" : [
+    "adviceMessages": [
       "Flight & Hotel",
       "If booked online (counts toward $10k online cap)",
       "Online (Local)",
       "First $10000 per month",
       "Online (Overseas)",
       "First $10000 per month"
-    ],
-    "transportRate" : 25
+    ]
   },
   {
-    "caps" : [
+    "id": "hsbc_vs",
+    "name": "Visa Signature",
+    "bank": "HSBC",
+    "imageName": "hsbc_vs",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 6.25,
+    "diningRate": 2.7777777777777777,
+    "groceryRate": 6.25,
+    "transportRate": 6.25,
+    "onlineLocalRate": 6.25,
+    "onlineOverseasRate": 6.25,
+    "overseasRate": 6.25,
+    "flightHotelRate": 6.25,
+    "billsRate": 25,
+    "caps": [
       {
-        "category" : [
+        "label": "5X + 3X Bonus Cap",
+        "category": [
           "Dining",
           "Grocery",
           "Transport",
@@ -982,88 +987,88 @@
           "Overseas",
           "Flight & Hotel"
         ],
-        "limit" : 100000,
-        "resetType" : "Yearly",
-        "label" : "5X + 3X Bonus Cap"
+        "limit": 100000,
+        "resetType": "Yearly"
       },
       {
-        "category" : [
-          "AAVS\/Bills"
+        "label": "iBanking Cap",
+        "category": [
+          "AAVS/Bills"
         ],
-        "limit" : 10000,
-        "resetType" : "Monthly",
-        "label" : "iBanking Cap"
+        "limit": 10000,
+        "resetType": "Monthly"
       }
     ],
-    "imageName" : "hsbc_vs",
-    "supportsCashback" : true,
-    "overseasRate" : 6.25,
-    "supportsMiles" : true,
-    "groceryRate" : 6.25,
-    "id" : "hsbc_vs",
-    "onlineOverseasRate" : 6.25,
-    "diningRate" : 2.7777777777777777,
-    "bank" : "HSBC",
-    "baseRate" : 6.25,
-    "billsRate" : 25,
-    "name" : "Visa Signature",
-    "flightHotelRate" : 6.25,
-    "onlineLocalRate" : 6.25,
-    "adviceMessages" : [
-      "AAVS\/Bills",
-      "iBanking limit $10k\/mo"
-    ],
-    "transportRate" : 6.25
+    "adviceMessages": [
+      "AAVS/Bills",
+      "iBanking limit $10k/mo"
+    ]
   },
   {
-    "caps" : [
+    "id": "hsbc_pulse",
+    "name": "Pulse Diamond",
+    "bank": "HSBC",
+    "imageName": "hsbc_pulse",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 25,
+    "diningRate": 4.17,
+    "groceryRate": 25,
+    "transportRate": 25,
+    "onlineLocalRate": 25,
+    "onlineOverseasRate": 4.166666666666667,
+    "overseasRate": 4.166666666666667,
+    "flightHotelRate": 25,
+    "billsRate": 25,
+    "caps": [
       {
-        "category" : [
+        "label": "CNY/MOP 4.4% Cap",
+        "category": [
           "Overseas",
           "Online (Overseas)"
         ],
-        "limit" : 80000,
-        "resetType" : "Monthly",
-        "label" : "CNY\/MOP 4.4% Cap"
+        "limit": 80000,
+        "resetType": "Monthly"
       },
       {
-        "category" : [
+        "label": "Red Hot Rewards 5X Cap",
+        "category": [
           "Dining",
           "Overseas"
         ],
-        "limit" : 100000,
-        "resetType" : "Yearly",
-        "label" : "Red Hot Rewards 5X Cap"
+        "limit": 100000,
+        "resetType": "Yearly"
       }
     ],
-    "imageName" : "hsbc_pulse",
-    "supportsCashback" : true,
-    "overseasRate" : 4.166666666666667,
-    "supportsMiles" : true,
-    "groceryRate" : 25,
-    "id" : "hsbc_pulse",
-    "onlineOverseasRate" : 4.166666666666667,
-    "diningRate" : 4.17,
-    "bank" : "HSBC",
-    "baseRate" : 25,
-    "billsRate" : 25,
-    "name" : "Pulse Diamond",
-    "flightHotelRate" : 25,
-    "onlineLocalRate" : 25,
-    "adviceMessages" : [
+    "adviceMessages": [
       "Overseas",
-      "4.4% rebate via QR\/Mobile in CN\/MO",
-      "AAVS\/Bills",
-      "iBanking limit $10k\/mo",
+      "4.4% rebate via QR/Mobile in CN/MO",
+      "AAVS/Bills",
+      "iBanking limit $10k/mo",
       "Dining",
-      "9.4% rebate for CN\/MO Dining via QR\/Mobile"
-    ],
-    "transportRate" : 25
+      "9.4% rebate for CN/MO Dining via QR/Mobile"
+    ]
   },
   {
-    "caps" : [
+    "id": "hsbc_premier",
+    "name": "Premier Mastercard",
+    "bank": "HSBC",
+    "imageName": "hsbc_premier",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 25,
+    "diningRate": 4.166666666666667,
+    "groceryRate": 25,
+    "transportRate": 25,
+    "onlineLocalRate": 25,
+    "onlineOverseasRate": 25,
+    "overseasRate": 25,
+    "flightHotelRate": 25,
+    "billsRate": 25,
+    "caps": [
       {
-        "category" : [
+        "label": "Red Hot Rewards 5X Cap",
+        "category": [
           "Dining",
           "Grocery",
           "Transport",
@@ -1072,37 +1077,37 @@
           "Overseas",
           "Flight & Hotel"
         ],
-        "limit" : 100000,
-        "resetType" : "Yearly",
-        "label" : "Red Hot Rewards 5X Cap"
+        "limit": 100000,
+        "resetType": "Yearly"
       }
     ],
-    "imageName" : "hsbc_premier",
-    "supportsCashback" : true,
-    "overseasRate" : 25,
-    "supportsMiles" : true,
-    "groceryRate" : 25,
-    "id" : "hsbc_premier",
-    "onlineOverseasRate" : 25,
-    "diningRate" : 4.166666666666667,
-    "bank" : "HSBC",
-    "baseRate" : 25,
-    "billsRate" : 25,
-    "name" : "Premier Mastercard",
-    "flightHotelRate" : 25,
-    "onlineLocalRate" : 25,
-    "adviceMessages" : [
-      "AAVS\/Bills",
-      "iBanking limit $10k\/mo",
+    "adviceMessages": [
+      "AAVS/Bills",
+      "iBanking limit $10k/mo",
       "Dining",
       "Buy-1-get-1 Michelin Dining privileges"
-    ],
-    "transportRate" : 25
+    ]
   },
   {
-    "caps" : [
+    "id": "hsbc_student",
+    "name": "Student Visa",
+    "bank": "HSBC",
+    "imageName": "hsbc_student",
+    "supportsMiles": true,
+    "supportsCashback": true,
+    "baseRate": 25,
+    "diningRate": 4.166666666666667,
+    "groceryRate": 25,
+    "transportRate": 25,
+    "onlineLocalRate": 25,
+    "onlineOverseasRate": 25,
+    "overseasRate": 25,
+    "flightHotelRate": 25,
+    "billsRate": 25,
+    "caps": [
       {
-        "category" : [
+        "label": "Red Hot Rewards 5X Cap",
+        "category": [
           "Dining",
           "Grocery",
           "Transport",
@@ -1111,173 +1116,147 @@
           "Overseas",
           "Flight & Hotel"
         ],
-        "limit" : 100000,
-        "resetType" : "Yearly",
-        "label" : "Red Hot Rewards 5X Cap"
+        "limit": 100000,
+        "resetType": "Yearly"
       },
       {
-        "category" : [
-          "AAVS\/Bills"
+        "label": "Tuition 2.4% Cap ($400 RC)",
+        "category": [
+          "AAVS/Bills"
         ],
-        "limit" : 16666,
-        "resetType" : "Yearly",
-        "label" : "Tuition 2.4% Cap ($400 RC)"
+        "limit": 16666,
+        "resetType": "Yearly"
       }
     ],
-    "imageName" : "hsbc_student",
-    "supportsCashback" : true,
-    "overseasRate" : 25,
-    "supportsMiles" : true,
-    "groceryRate" : 25,
-    "id" : "hsbc_student",
-    "onlineOverseasRate" : 25,
-    "diningRate" : 4.166666666666667,
-    "bank" : "HSBC",
-    "baseRate" : 25,
-    "billsRate" : 25,
-    "name" : "Student Visa",
-    "flightHotelRate" : 25,
-    "onlineLocalRate" : 25,
-    "adviceMessages" : [
-      "AAVS\/Bills",
-      "2.4% for Tuition (cap $400 RC\/yr); 1X for iBanking",
+    "adviceMessages": [
+      "AAVS/Bills",
+      "2.4% for Tuition (cap $400 RC/yr); 1X for iBanking",
       "Dining",
-      "Allocate 5X for $4.17\/mi",
+      "Allocate 5X for $4.17/mi",
       "Overseas",
-      "Allocate 5X for $4.17\/mi"
-    ],
-    "transportRate" : 25
+      "Allocate 5X for $4.17/mi"
+    ]
   },
   {
-    "caps" : [
-
-    ],
-    "imageName" : "sc_cathay_green",
-    "supportsCashback" : false,
-    "overseasRate" : 4,
-    "supportsMiles" : true,
-    "groceryRate" : 6,
-    "id" : "sc_cathay",
-    "onlineOverseasRate" : 4,
-    "diningRate" : 4,
-    "bank" : "SCB",
-    "baseRate" : 6,
-    "billsRate" : 6,
-    "name" : "Cathay Mastercard",
-    "flightHotelRate" : 4,
-    "onlineLocalRate" : 6,
-    "adviceMessages" : [
+    "id": "sc_cathay",
+    "name": "Cathay Mastercard",
+    "bank": "SCB",
+    "imageName": "sc_cathay_green",
+    "supportsMiles": true,
+    "supportsCashback": false,
+    "baseRate": 6,
+    "diningRate": 4,
+    "groceryRate": 6,
+    "transportRate": 6,
+    "onlineLocalRate": 6,
+    "onlineOverseasRate": 4,
+    "overseasRate": 4,
+    "flightHotelRate": 4,
+    "billsRate": 6,
+    "caps": [],
+    "adviceMessages": [
       "Flight & Hotel",
-      "$2 \/ mi for Cathay and HK Express only"
-    ],
-    "transportRate" : 6
+      "$2 / mi for Cathay and HK Express only"
+    ]
   },
   {
-    "id" : "sc_cathay_blue",
-    "transportRate" : 6,
-    "overseasRate" : 3,
-    "bank" : "SCB",
-    "diningRate" : 4,
-    "supportsMiles" : true,
-    "flightHotelRate" : 4,
-    "imageName" : "sc_cathay_priority",
-    "adviceMessages" : [
+    "id": "sc_cathay_blue",
+    "name": "Cathay Mastercard (Priority)",
+    "bank": "SCB",
+    "imageName": "sc_cathay_priority",
+    "supportsMiles": true,
+    "supportsCashback": false,
+    "baseRate": 6,
+    "diningRate": 4,
+    "groceryRate": 6,
+    "transportRate": 6,
+    "onlineLocalRate": 6,
+    "onlineOverseasRate": 3,
+    "overseasRate": 3,
+    "flightHotelRate": 4,
+    "billsRate": 6,
+    "caps": [],
+    "adviceMessages": [
       "Flight & Hotel",
-      "$2 \/ mi for Cathay and HK Express only"
-    ],
-    "baseRate" : 6,
-    "caps" : [
-
-    ],
-    "groceryRate" : 6,
-    "name" : "Cathay Mastercard (Priority)",
-    "billsRate" : 6,
-    "supportsCashback" : false,
-    "onlineLocalRate" : 6,
-    "onlineOverseasRate" : 3
+      "$2 / mi for Cathay and HK Express only"
+    ]
   },
   {
-    "id" : "sc_cathay_black",
-    "transportRate" : 6,
-    "overseasRate" : 2,
-    "bank" : "SCB",
-    "diningRate" : 4,
-    "supportsMiles" : true,
-    "flightHotelRate" : 4,
-    "imageName" : "sc_cathay_private",
-    "adviceMessages" : [
+    "id": "sc_cathay_black",
+    "name": "Cathay Mastercard (Private)",
+    "bank": "SCB",
+    "imageName": "sc_cathay_private",
+    "supportsMiles": true,
+    "supportsCashback": false,
+    "baseRate": 6,
+    "diningRate": 4,
+    "groceryRate": 6,
+    "transportRate": 6,
+    "onlineLocalRate": 6,
+    "onlineOverseasRate": 2,
+    "overseasRate": 2,
+    "flightHotelRate": 4,
+    "billsRate": 6,
+    "caps": [],
+    "adviceMessages": [
       "Flight & Hotel",
-      "$2 \/ mi for Cathay and HK Express only"
-    ],
-    "baseRate" : 6,
-    "caps" : [
-
-    ],
-    "groceryRate" : 6,
-    "name" : "Cathay Mastercard (Private)",
-    "billsRate" : 6,
-    "supportsCashback" : false,
-    "onlineLocalRate" : 6,
-    "onlineOverseasRate" : 2
+      "$2 / mi for Cathay and HK Express only"
+    ]
   },
   {
-    "id" : "sc_smart",
-    "transportRate" : 5,
-    "overseasRate" : 0.55,
-    "bank" : "SCB",
-    "diningRate" : 0.55,
-    "supportsMiles" : false,
-    "flightHotelRate" : 0.55,
-    "imageName" : "sc_smart",
-    "adviceMessages" : [
+    "id": "sc_smart",
+    "name": "Smart Card",
+    "bank": "SCB",
+    "imageName": "sc_smart",
+    "supportsMiles": false,
+    "supportsCashback": true,
+    "baseRate": 0.55,
+    "diningRate": 0.55,
+    "groceryRate": 5,
+    "transportRate": 5,
+    "onlineLocalRate": 5,
+    "onlineOverseasRate": 0.55,
+    "overseasRate": 0.55,
+    "flightHotelRate": 0.55,
+    "billsRate": 999,
+    "caps": [
+      {
+        "label": "5% Rebate Cap",
+        "category": [
+          "Grocery",
+          "Transport",
+          "Online (Local)"
+        ],
+        "limit": 60000,
+        "resetType": "Seasonal"
+      }
+    ],
+    "adviceMessages": [
       "Grocery",
       "Designated Merchants only",
       "Transport",
       "Designated Merchants only",
       "Online (Local)",
       "Designated Merchants only"
-    ],
-    "baseRate" : 0.55,
-    "caps" : [
-      {
-        "category" : [
-          "Grocery",
-          "Transport",
-          "Online (Local)"
-        ],
-        "limit" : 60000,
-        "resetType" : "Seasonal",
-        "label" : "5% Rebate Cap"
-      }
-    ],
-    "groceryRate" : 5,
-    "name" : "Smart Card",
-    "billsRate" : 999,
-    "supportsCashback" : true,
-    "onlineLocalRate" : 5,
-    "onlineOverseasRate" : 0.55
+    ]
   },
   {
-    "id" : "sc_simplycash",
-    "transportRate" : 1.5,
-    "overseasRate" : 2,
-    "bank" : "SCB",
-    "diningRate" : 1.5,
-    "supportsMiles" : false,
-    "flightHotelRate" : 1.5,
-    "imageName" : "sc_simply_cash",
-    "adviceMessages" : [
-
-    ],
-    "baseRate" : 1.5,
-    "caps" : [
-
-    ],
-    "groceryRate" : 1.5,
-    "name" : "Simply Cash Visa",
-    "billsRate" : 1.5,
-    "supportsCashback" : true,
-    "onlineLocalRate" : 1.5,
-    "onlineOverseasRate" : 2
+    "id": "sc_simplycash",
+    "name": "Simply Cash Visa",
+    "bank": "SCB",
+    "imageName": "sc_simply_cash",
+    "supportsMiles": false,
+    "supportsCashback": true,
+    "baseRate": 1.5,
+    "diningRate": 1.5,
+    "groceryRate": 1.5,
+    "transportRate": 1.5,
+    "onlineLocalRate": 1.5,
+    "onlineOverseasRate": 2,
+    "overseasRate": 2,
+    "flightHotelRate": 1.5,
+    "billsRate": 1.5,
+    "caps": [],
+    "adviceMessages": []
   }
 ]
